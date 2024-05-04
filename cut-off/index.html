@@ -1,1 +1,115 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutoff Scores</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        .company-logo img {
+            width: 70px;
+        
+        }
+        
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        .nav-links li {
+            margin-right: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="../images/logo.jpg" alt="company logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../hall/index.html">Headlines</a></li>
+                <li><a href="../quiz.html">Quiz</a></li>
+                <li><a href="../sarkari result/index.html">Results</a></li>
+                <li><a href="./cut-off/#">Cutoff</a></li>
+                <li><a href="../login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Cutoff Scores</h1>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to our cutoff scores website. We provide information about the latest cutoff scores for various exams and programs.</p>
+        </section>
+        <section id="exams">
+            <h2>Exam Cutoffs</h2>
+            <p>Here are the latest cutoff scores for some popular exams:</p>
+            <ul>
+                <li><a href="./cut/gate_cutoff.html">Gate Exam</a></li>
+                <br>
+                <li><a href="./cut/ias-education.html">CSE</a></li>
+                <br>
+                <li>we will add more cut-off soon </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further information, feel free to contact us:</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+    </main>
+    <button id="chatBtn">Chat with us</button>
+<div id="chatPopup">
+    <!-- Chatbot content goes here -->
+    <div id="chatCloseBtn">&times;</div>
+    <h2>Welcome to our chatbot</h2>
+    <p>This is where the chatbot conversation will be displayed.</p>
+</div>
+</body>
+<script src="../script.js"></script>
+</html>
