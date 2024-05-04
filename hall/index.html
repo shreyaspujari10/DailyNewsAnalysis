@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title >News App</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/sentiment"></script>
 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../hall/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+    .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin-right: 20px;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+          <a href="#" class="logo">Daily News Analysis</a>
+          <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../hall/index.html">Headlines</a></li>
+              <li><a href="../quiz.html">Quiz</a></li>
+              <li><a href="../sarkari result/index.html">Results</a></li>
+              <li><a href="../cut-off/#">Cutoff</a></li>
+              <li><a href="../login.html">Login</a></li>
+          </ul>
+      </nav>
+    </header>
+    
+    <main id="home">
+      
+    <div class="options-container"></div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button onclick="searchNews()">Search</button>
+    </div>
+    <div class="container"></div>
+    
+      <!-- HTML -->
+      <button id="load-more">Load More</button>
+      
+    <!-- API Key -->
+    <script src="api-key.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </main>
+  <button id="chatBtn"> <i class="fa-regular fa-message"></i> Chat with us</button>
+  <div id="chatPopup">
+    <!-- Chatbot content goes here -->
+    <div id="chatCloseBtn">&times;</div>
+    <h2>Welcome to our chatbot</h2>
+    <p>This is where the chatbot conversation will be displayed.</p>
+</div>
+  </body>
+  <script src="../script.js"></script>
+  <script src="https://kit.fontawesome.com/cb14beeb09.js" crossorigin="anonymous"></script>
+</html>
