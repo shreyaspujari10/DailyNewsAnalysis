@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main-section">
+
+        <header>
+            <nav class="navbar">
+                <a href="#" onclick="reload()" class="company-logo">
+                    <img src="images/logo.jpg" alt="company logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./hall/index.html">Headlines</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="./sarkari result/index.html">Results</a></li>
+                    <li><a href="./cut-off/#">Cutoff</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="container">
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header <?php echo $_SESSION['class']; ?>">
+                        <strong class="me-auto">Exam Instructions: Multiple-Choice Questions (MCQ)
+
+                            General Guidelines:
+                            
+                            This exam consists of multiple-choice questions.
+                            Each question has only one correct answer.
+                            Read each question carefully before selecting your answer.
+                            Ensure that you mark your answers clearly and legibly on the provided answer sheet.
+                            You must use a pencil to mark your answers on the answer sheet. Do not use pen or any other writing instrument.</strong>
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="toast"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <h2 class="pt-4">Welcome to Dashboard,
+                    
+                </h2>
+
+                <div class="col-md-6">
+                    <div class="card m-5 p-3">
+                        <div class="card-body">
+                            <h3 class="card-title py-2">Start taking Quiz Polity</h3>
+                            <a href="../quiz-master/polity/index.html" class="btn btn-warning m-2">Start the Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <div class="card m-5 p-3">
+                        <div class="card-body">
+                            <h3 class="card-title py-2">Start taking Quiz polity</h3>
+                            <a href="" class="btn btn-warning m-2">Start the Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <div class="card m-5 p-3">
+                        <div class="card-body">
+                            <h3 class="card-title py-2">Start taking Quiz Math</h3>
+                            <a href="../quiz-master/math/index.html" class="btn btn-warning m-2">Start the Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <div class="card m-5 p-3">
+                        <div class="card-body">
+                            <h3 class="card-title py-2">Start taking Quiz English</h3>
+                            <a href="../quiz-master/english/english.html" class="btn btn-warning m-2">Start the Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <div class="card m-5 p-3">
+                        <div class="card-body">
+                            <h3 class="card-title py-2">Start taking Quiz Geography</h3>
+                            <a href="./quiz-master/index.html" class="btn btn-warning m-2">Start the Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <div class="card m-5 p-3">
+                        <div class="card-body">
+                            <h3 class="card-title py-2">Start taking Quiz on UPSC</h3>
+                            <iframe name='proprofs' id='proprofs' width='100%' height='100%' frameborder=0 marginwidth=0 marginheight=0 src='https://www.proprofs.com/quiz-school/ugc/story.php?title=upsc-prelims-mock-test-quiz-mcq&id=3982957&ew=430' allow="camera *;microphone *;fullscreen;"> </iframe> <div style='font-size:10px; font-family:Arial, Helvetica, sans-serif; text-align:left;'><a href='https://www.proprofs.com/quiz-school/solutions/test-maker-software/' title='ProProfs Test Maker' target='_blank'>ProProfs Test Maker</a></div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button id="chatBtn">Chat with us</button>
+<div id="chatPopup">
+    <!-- Chatbot content goes here -->
+    <div id="chatCloseBtn">&times;</div>
+    <h2>Welcome to our chatbot</h2>
+    <p>This is where the chatbot conversation will be displayed.</p>
+</div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+</html>
